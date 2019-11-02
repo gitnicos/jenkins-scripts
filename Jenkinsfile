@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo "Database engine is ${DB_ENGINE}"
                 echo "DISABLE_AUTH is ${DISABLE_AUTH}"
-                sh cat text.txt
+                sh 'cat text.txt'
             }
         }
     }
